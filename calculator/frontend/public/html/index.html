@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../css/style.css"></head>
+<body>
+    <!-- PALETA DE TEMAS -->
+    <div id="paleta-conteudo">
+        <h3>Temas</h3>
+        <div class="cor-opcao" onclick="calculadora.mudarTema('padrao')" style="background-color: #ffffff; border: 2px solid #333;" title="Branco"></div>
+        <div class="cor-opcao" onclick="calculadora.mudarTema('azul')" style="background-color: #3498db;" title="Azul"></div>
+        <div class="cor-opcao" onclick="calculadora.mudarTema('verde')" style="background-color: #2ecc71;" title="Verde"></div>
+        <div class="cor-opcao" onclick="calculadora.mudarTema('laranja')" style="background-color: #e67e22;" title="Laranja"></div>
+        <div class="cor-opcao" onclick="calculadora.mudarTema('roxo')" style="background-color: #9b59b6;" title="Roxo"></div>
+        <div class="cor-opcao" onclick="calculadora.mudarTema('escuro')" style="background-color: #2c3e50;" title="Escuro"></div>
+        <div class="cor-opcao" onclick="calculadora.mudarTema('vermelho')" style="background-color: #e74c3c;" title="Vermelho"></div>
+        <div class="cor-opcao" onclick="calculadora.mudarTema('preto')" style="background-color: #000000;" title="Preto"></div>
+        <div class="cor-opcao" onclick="calculadora.mudarTema('amarelo')" style="background-color: #f1c40f;" title="Amarelo"></div>
+    </div>
+
+    <!-- CALCULADORA -->
+    <div id="containerCalculadora">
+        <div style="display: flex; gap: 10px; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+            <button class="button-tema" onclick="calculadora.togglePaleta()">🎨</button>
+            <button class="button-historico" onclick="calculadora.toggleHistorico()">📋</button>
+        </div>
+        <div id="visor"><span id="visorInfo"></span></div>
+        <div id="calculadora">
+            <div id="buttonGrid">
+    
+        <button class="button operadores" value="(">(</button>   
+        <button class="button" onclick="calculadora.apagaUltimoDigito()">DEL</button>
+        <button class="button operadores" value=")" >)</button>
+        <button class="button operadores" value="/">÷</button>
+        <button class="button numeros" value="1">1</button>   
+        <button class="button numeros" value="2">2</button>
+        <button class="button numeros" value="3">3</button>
+        <button class="button operadores" value="*">x</button>
+        <button class="button numeros" value="4">4</button>   
+        <button class="button numeros" value="5">5</button>
+        <button class="button numeros" value="6">6</button>
+        <button class="button operadores" value="-">-</button>
+        <button class="button numeros" value="7">7</button>   
+        <button class="button numeros" value="8">8</button>
+        <button class="button numeros" value="9">9</button>
+        <button class="button operadores" value="+">+</button>
+        <button class="button numeros" value="0">0</button>
+        <button class="button numeros" value=".">,</button>
+        <button class="button-result" onclick="calculadora.handleOperacoes()" >=</button>
+            </div>  
+        </div>
+    </div>
+    <div id="historico">
+        <button class="button-limpar" onclick="calculadora.limparHistorico()">Limpar Histórico</button>
+        <div id="historico-conteudo"></div>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+</html>
