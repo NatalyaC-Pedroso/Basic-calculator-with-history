@@ -52,9 +52,9 @@ class Calculadora {
     }
     mudarTema(tema) {
         const container = document.getElementById("containerCalculadora");
-        // Remove todas as classes de tema
+   
         container.classList.remove('tema-padrao', 'tema-azul', 'tema-verde', 'tema-laranja', 'tema-roxo', 'tema-escuro', 'tema-vermelho', 'tema-preto', 'tema-amarelo');
-        // Adiciona o novo tema
+
         container.classList.add('tema-' + tema);
     }
 }
