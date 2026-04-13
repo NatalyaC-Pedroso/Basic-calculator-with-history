@@ -2,12 +2,12 @@
 
 <h1 align="center">Calculadora🧮</h1>
 
-### Funcionalidades 
+### Funcionalidades ✨
 
 - Histórico usando array;
 - Usuário pode mudar a cor da calculadora;
 
-### Como usar 
+### Como usar 🚀
 - baixe o código;
 - O botão na direita acima da calculadora abre o histórico;
 - O botão na esquerda acima da calculadora abre a paleta de cores;
